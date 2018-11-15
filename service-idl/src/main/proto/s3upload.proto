@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package io.netifi.proteus.s3upload.service;
+
+option java_package = "io.netifi.proteus.s3upload.service.protobuf";
+option java_outer_classname = "UploadServiceProto";
+option java_multiple_files = true;
+
+service UploadService {
+
+    // Returns a Hello World Message
+    rpc SayHello (HelloRequest) returns (HelloResponse) {}
+}
+
+message HelloRequest {
+    string name = 1;
+}
+
+message HelloResponse {
+    string message = 1;
+}
