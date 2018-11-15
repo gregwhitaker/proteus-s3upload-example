@@ -1,16 +1,28 @@
 plugins {
     id 'java'
+    id 'application'
+    id 'io.spring.dependency-management' version '1.0.6.RELEASE'
 }
 
-group 'io.netifi'
-version '0.1.0'
-
+mainClassName = 'io.netifi.proteus.s3upload.service.Main'
 sourceCompatibility = 1.8
 
-repositories {
-    mavenCentral()
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.boot:spring-boot-dependencies:${springBootBomVersion}"
+    }
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile project(':service-idl')
+
+    compile "io.netifi.proteus:proteus-spring-boot-starter:$proteusSpringVersion"
+}
+
+configurations.all {
+    resolutionStrategy {
+        dependencySubstitution {
+            substitute module('com.google.guava:guava') with module('com.google.guava:guava:22.0')
+        }
+    }
 }
