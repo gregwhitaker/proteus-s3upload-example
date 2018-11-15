@@ -17,6 +17,7 @@ dependencies {
     compile project(':service-idl')
 
     compile "io.netifi.proteus:proteus-spring-boot-starter:$proteusSpringVersion"
+    compile 'com.amazonaws:aws-java-sdk-s3:1.11.447'
 }
 
 configurations.all {

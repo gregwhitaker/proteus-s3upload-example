@@ -8,14 +8,11 @@ option java_multiple_files = true;
 
 service UploadService {
 
-    // Returns a Hello World Message
-    rpc SayHello (HelloRequest) returns (HelloResponse) {}
+    rpc Upload (stream FilePart) returns (Empty) {}
 }
 
-message HelloRequest {
-    string name = 1;
+message FilePart {
+    bytes part = 1;
 }
 
-message HelloResponse {
-    string message = 1;
-}
+message Empty {}
