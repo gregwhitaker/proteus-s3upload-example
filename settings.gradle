@@ -1,0 +1,5 @@
+rootProject.name = 'proteus-s3upload-example'
+include 'client'
+include 'service'
+include 'service-idl'
+
