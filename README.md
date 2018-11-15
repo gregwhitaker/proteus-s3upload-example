@@ -1,5 +1,14 @@
 # proteus-s3upload-example
 
+An example of a streaming file upload to [Amazon S3](https://aws.amazon.com/s3/) using [Netifi Proteus](https://www.netifi.com/proteus).
+
+## Prerequisites
+
+## Running the Example
+
+## Bugs and Feedback
+For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/proteus-s3upload-example/issues).
+
 ## License
 Copyright 2018 [Netifi Inc.](https://www.netifi.com)
 
