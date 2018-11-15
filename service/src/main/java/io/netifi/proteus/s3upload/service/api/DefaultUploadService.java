@@ -23,7 +23,7 @@ public class DefaultUploadService implements UploadService {
     @Autowired
     private AmazonS3 s3client;
 
-    @Value("s3.bucket")
+    @Value("${s3.bucket}")
     private String s3Bucket;
 
     @Override
