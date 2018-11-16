@@ -40,6 +40,9 @@ Follow the steps below to run the example.
 ## Bugs and Feedback
 For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/proteus-s3upload-example/issues).
 
+## Support
+Support for Proteus and RSocket is also available on the [Netifi Community Forums](https://community.netifi.com).
+
 ## License
 Copyright 2018 [Netifi Inc.](https://www.netifi.com)
 
