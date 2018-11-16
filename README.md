@@ -1,4 +1,5 @@
 # proteus-s3upload-example
+[![Build Status](https://travis-ci.org/gregwhitaker/proteus-s3upload-example.svg?branch=master)](https://travis-ci.org/gregwhitaker/proteus-s3upload-example)
 
 An example of a streaming file upload to [Amazon S3](https://aws.amazon.com/s3/) using [Netifi Proteus](https://www.netifi.com/proteus).
 
