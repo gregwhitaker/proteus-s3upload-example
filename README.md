@@ -4,7 +4,21 @@ An example of a streaming file upload to [Amazon S3](https://aws.amazon.com/s3/)
 
 ## Prerequisites
 
+## Building the Example
+Follow the steps below to build the example.
+
+1. Run the following Gradle command to build the application:
+
+        ./gradlew clean build
+
 ## Running the Example
+Follow the steps below to run the example.
+
+1. Run the following command to start the upload service:
+
+        ./gradlew :service:run
+        
+2. Run the following command to upload the `cat.jpeg` image to Amazon S3:
 
 ## Bugs and Feedback
 For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/proteus-s3upload-example/issues).
