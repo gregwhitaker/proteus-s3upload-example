@@ -4,9 +4,17 @@
 An example of a streaming file upload to [Amazon S3](https://aws.amazon.com/s3/) using [Netifi Proteus](https://www.netifi.com/proteus).
 
 ## Prerequisites
-This example requires a running Netifi Proteus Broker.
+This example requires the following prerequisites:
 
-1. Run the following command to start a Netifi Proteus Broker:
+1. AWS Account
+
+2. AWS Access Key ID and AWS Secret Access Key configured on your machine
+
+3. S3 bucket configured in your AWS account that can be accessed by your keys
+
+1. A Running Netifi Proteus Broker
+
+    Run the following command to start a Netifi Proteus Broker:
 
         docker run \
         -p 8001:8001 \
@@ -36,6 +44,8 @@ Follow the steps below to run the example.
         ./gradlew :service:run
         
 3. Run the following command to upload the `cat.jpeg` image to Amazon S3:
+
+        ./gradlew :client:run --args="{full path to cat.jpeg}"
 
 ## Bugs and Feedback
 For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/proteus-s3upload-example/issues).
